@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BZM İnşaat</title>
+    <!-- İcon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon.ico.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--Slider Link -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Custom css file -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./phoneValidate/phone-number-validation/build/css/intlTelInput.css">
+  </head>
+  <body>
+    <!-- Header section -->
+
+    <header class="header">
+      <!-- Yüklenici -->
+      <div id="preloader">
+        <img src="./images/logg.png" id="logo" alt="BZM LTD. Logo" />
+      </div>
+
+      <div class="logcll">
+        <a href="#" class="logo"> Bzm<span>İnşaat</span></a>
+      </div>
+
+      <nav class="navbar">
+        <a href="#home">Ana Sayfa</a>
+        <a href="#about">Hakkımızda</a>
+        <a href="#services">Hizmetlerimiz</a>
+        <a href="#projects">Projeler</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"><MdMenu /></div>
+        <div id="info-btn" class="fas fa-info-circle"><FaInfoCircle /></div>
+        <div id="search-btn" class="fas fa-search"><FaSearch /></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input type="search" name="" placeholder="Arama yap" id="search-box" />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <!-- dakika 25 Login Form (optional)-->
+    </header>
+
+    <div class="contact-info">
+      <div id="close-contact-info" class="fas fa-times"></div>
+
+      <div class="info">
+        <i class="fas fa-phone"></i>
+        <h3>Phone Number</h3>
+        <p>+995-514-48-6161</p>
+      </div>
+      <div class="info">
+        <i onclick="redirectToEmail()" class="fas fa-envelope"></i>
+        <h3>E-mail Adress</h3>
+        <p>bzmltd@hotmail.com</p>
+      </div>
+      <div class="info">
+        <i onclick="redirectToGoogleMaps()" class="fas fa-map-marker-alt"></i>
+        <h3>Office Adress</h3>
+        <p>Batum,Georgia</p>
+        <p>Parnavaz Mepe Cad. N74. Kat 2</p>
+      </div>
+      <div class="share">
+        <a
+          href="https://www.facebook.com/profile.php?id=61559802451516"
+          target="_blank"
+          class="fab fa-facebook-f"
+        ></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </div>
+    <!-- Header section end -->
+
+    <!-- Home Section Starts -->
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <section
+            class="swiper-slide slide"
+            style="
+              background: url(images/slider_1.jpg) no-repeat;
+              background-size: cover;
+              background-position: center;
+            "
+          >
+            <div class="content">
+              <h3>Güvenilir Taşeronluk Hizmetleri</h3>
+              <p>
+                <strong>BZM Ltd.</strong> olarak, projelerinizin her aşamasında
+                kaliteli ve güvenilir taşeronluk hizmetleri sunuyoruz.
+                Profesyonel ekibimiz ile işinizi zamanında ve bütçenizde
+                tamamlıyoruz.
+              </p>
+              <a href="#about" class="btn"> Başlayın</a>
+            </div>
+          </section>
+
+          <section
+            class="swiper-slide slide"
+            style="
+              background: url(images/slider_2.jpg) no-repeat;
+              background-size: cover;
+              background-position: center;
+            "
+          >
+            <div class="content">
+              <h3>Uzman Ekiple Kaliteli İşçilik</h3>
+              <p>
+                Deneyimli ve alanında uzman ekibimiz ile inşaat projelerinizde
+                en yüksek kalite standartlarını sağlıyoruz. İhtiyaçlarınıza özel
+                çözümler üretiyoruz.
+              </p>
+              <a href="#about" class="btn"> Detaylı Bilgi</a>
+            </div>
+          </section>
+
+          <section
+            class="swiper-slide slide"
+            style="
+              background: url(images/slider_3.jpg) no-repeat;
+              background-size: cover;
+              background-position: center;
+            "
+          >
+            <div class="content">
+              <h3>İnovatif Yaklaşımlar ve Teknolojiler</h3>
+              <p>
+                Sektördeki yenilikleri ve teknolojik gelişmeleri yakından takip
+                ederek, projelerinize inovatif yaklaşımlar sunuyoruz. Modern
+                çözümlerle iş verimliliğinizi artırıyoruz.
+              </p>
+              <a href="#about" class="btn"> Keşfet</a>
+            </div>
+          </section>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- Home Section End -->
+
+    <!-- About Start -->
+
+    <section class="about" id="about">
+      <h1 class="heading">Hakkımızda</h1>
+      <div class="row">
+        <div class="video">
+          <video src="images/about-cVideo.mp4" loop muted autoplay></video>
+        </div>
+
+        <div class="content">
+          <h3>Hayal Ettiğiniz En İyi Çalışmayı Size Sunacağız!</h3>
+          <p>
+            <strong>BZM Ltd.</strong> olarak, inşaat sektöründe taşeronluk
+            hizmetleri sunan lider firmalardan biriyiz. Kurulduğumuz günden bu
+            yana, kalite ve güvenilirlik ilkelerini benimseyerek,
+            müşterilerimize en iyi hizmeti sağlama hedefiyle çalışmalarımızı
+            sürdürüyoruz.
+          </p>
+          <h1>Misyonumuz</h1>
+          <p>
+            Amacımız, inşaat projelerinin her aşamasında profesyonel taşeronluk
+            hizmetleri sunarak, projelerin zamanında ve bütçesinde
+            tamamlanmasına katkı sağlamaktır. Uzman ekibimiz ve geniş
+            deneyimimizle, her türlü inşaat projesinde kaliteli işçilik ve çözüm
+            odaklı yaklaşımlar sunmaktayız.
+          </p>
+          <h2>Vizyonumuz</h2>
+          <p>
+            Sektördeki yenilikleri ve teknolojik gelişmeleri yakından takip
+            ederek, inşaat sektöründe öncü bir taşeron firma olmayı
+            hedefliyoruz. Müşteri memnuniyetini en üst seviyede tutarak, uzun
+            vadeli iş ortaklıkları kurmak ve sektördeki itibarımızı sürekli
+            olarak yükseltmek en büyük vizyonumuzdur.
+          </p>
+
+          <a href="#services" class="btn"> Daha fazlası </a>
+        </div>
+      </div>
+
+      <!--Başarılar Kısmı -->
+
+      <!-- 
+
+        <div class="box-container">
+
+        <div class="box">
+          <h3 class="counter" data-target="10">0</h3>
+          <p>Yıl deneyim!</p>
+        </div>
+        <div class="box">
+          <h3 class="counter" data-target="1500">0</h3>
+          <p>Tamamlanan Projeler</p>
+        </div>
+        <div class="box">
+          <h3 class="counter" data-target="790">0</h3>
+          <p>Memnun Müşteriler</p>
+        </div>
+        <div class="box">
+          <h3 class="counter" data-target="450">0</h3>
+          <p>Aktif Çalışanlar</p>
+        </div>
+      </div> --> 
+
+      
+    </section>
+    <!-- About end -->
+
+    <!-- Service Section Start -->
+
+    <section class="services" id="services">
+      <h1 class="heading">Hizmetlerimiz</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/icons/vinc.png" alt="" />
+          <h3>Kaba inşaat Yapımı</h3>
+          <br />
+          <p>
+            • <strong>Temel ve Zemin İşleri:</strong> Bina temellerinin
+            kazılması, temel betonlarının dökülmesi, zemin iyileştirme ve drenaj
+            çalışmaları.
+          </p>
+          <br />
+          <p>
+            • <strong>Taşıyıcı Sistemler:</strong> Betonarme, çelik veya ahşap
+            taşıyıcı sistemlerin inşası. Kolon, kiriş, döşeme ve duvarların
+            yapımı.
+          </p>
+          <br />
+          <p>
+            • <strong>Duvar ve Çatı İşleri:</strong> Tuğla, beton blok, gazbeton
+            gibi malzemelerle duvar örülmesi. Çatı kirişleri, çatı kaplamaları
+            ve su yalıtımının yapılması.
+          </p>
+          <br />
+          <p>
+            • <strong>İskele ve Kalıp İşleri:</strong> Beton dökümü için gerekli
+            kalıp sistemlerinin kurulması ve kullanılması. İnşaat boyunca iskele
+            sistemlerinin kurulması ve kullanılması.
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/icons/İnceIs.png" alt="" />
+          <h3>İnce inşaat Yapımı</h3>
+          <br />
+          <p>
+            • <strong>Duvar ve Sıva İşleri:</strong> İç ve dış duvarların
+            sıvanması, alçı sıva, alçıpan duvar sistemleri.
+          </p>
+          <br />
+          <p>
+            • <strong>Zemin Kaplama İşleri:</strong> Seramik, parke, mermer,
+            halı gibi zemin kaplama malzemelerinin uygulanması.
+          </p>
+          <br />
+          <p>
+            • <strong>Tavan ve Asma Tavan İşleri:</strong> Alçıpan tavanlar,
+            metal tavan sistemleri, dekoratif tavan uygulamaları.
+          </p>
+          <br />
+          <p>
+            • <strong>Boya ve Dekorasyon İşleri:</strong> Duvar ve tavanların
+            boyanması, duvar kağıdı uygulanması, dekoratif kaplamalar.
+          </p>
+          <br />
+          <p>
+            • <strong>Doğrama ve Mobilya İşleri:</strong> Kapı ve pencere
+            doğramaları, gömme dolaplar, mutfak dolapları, ahşap süslemeler.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images/icons/elektrik.png" alt="" />
+          <h3>Teknik İşler</h3>
+          <br />
+          <p>
+            • <strong>Elektrik Tesisatı:</strong> Elektrik kablolama, priz ve
+            anahtar montajı, aydınlatma sistemlerinin kurulumu.
+          </p>
+          <br />
+          <p>
+            • <strong>Sıhhi Tesisat:</strong> Su ve kanalizasyon boru
+            sistemlerinin döşenmesi, su armatürleri ve vanaların montajı.
+          </p>
+          <br />
+          <p>
+            •
+            <strong>Isıtma, Soğutma ve Havalandırma Sistemleri:</strong>
+            Kalorifer, klima, havalandırma kanalları ve cihazlarının montajı.
+          </p>
+          <br />
+          <p>
+            • <strong>Yangın Söndürme ve Güvenlik Sistemleri:</strong> Yangın
+            alarm sistemleri, yangın söndürme sistemleri, güvenlik kameraları ve
+            diğer güvenlik sistemleri.
+          </p>
+        </div>
+      </div></section>
+    <!-- Service Section End -->
+
+    <!-- Projelerimiz -->
+    <section class="projects" id="projects">
+      <h1 class="heading">Referans Projelerimiz</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/Next-collection/NextKapak.png" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Next Group / Collection</h3>
+              <p>Kaba İnşaat</p>
+            </div>
+            <i class="fas fa-plus" id="openModalNextGroup"></i>
+          </div>
+        </div>
+
+        <div  class="box">
+          <div class="image">
+            <img src="images/Alliance-Centrapolis/allianceKapak.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Alliance / Centropolis</h3>
+              <p>Kaba İnşaat</p>
+            </div>
+            <i class="fas fa-plus" id="openModalAlliance"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projelerimiz bitişi -->
+
+    <!-- Next Group Modal -->
+    <div id="modalNextGroup" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalNextGroup">&times;</span>
+        <div class="photo-gallery">
+          <h3>Next Collection Çalışma Sahası</h3>
+          <img
+            src="images/Next-collection/n6.jpeg"
+            alt="Next Group Fotoğraf 6"
+          />
+          <img
+            src="images/Next-collection/n5.jpeg"
+            alt="Next Group Fotoğraf 5"
+          />
+          <img
+            src="images/Next-collection/n4.jpeg"
+            alt="Next Group Fotoğraf 4"
+          />
+          <img
+            src="images/Next-collection/n3.jpeg"
+            alt="Next Group Fotoğraf 3"
+          />
+          <img
+            src="images/Next-collection/n2.jpeg"
+            alt="Next Group Fotoğraf 2"
+          />
+          <img
+            src="images/Next-collection/n1.jpeg"
+            alt="Next Group Fotoğraf 1"
+          />
+          <img
+            src="images/Next-collection/n7.jpeg"
+            alt="Next Group Fotoğraf 7"
+          />
+          <img
+            src="images/Next-collection/n8.jpeg"
+            alt="Next Group Fotoğraf 8"
+          />
+          <img
+            src="images/Next-collection/n9.jpeg"
+            alt="Next Group Fotoğraf 9"
+          />
+        </div>
+        <a class="prev" id="prevNextGroup">&#10094;</a>
+        <a class="next" id="nextNextGroup">&#10095;</a>
+      </div>
+    </div>
+
+    <!-- Alliance Modal -->
+    <div id="modalAlliance" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalAlliance">&times;</span>
+        <div class="photo-gallery">
+          <h3>Alliance Centropolis Çalışma Sahası</h3>
+          <img
+            src="images/Alliance-Centrapolis/a1.jpeg"
+            alt="Alliance Fotoğraf 1"
+          />
+          <img
+            src="images/Alliance-Centrapolis/a2.jpeg"
+            alt="Alliance Fotoğraf 2"
+          />
+       
+        </div>
+        <a class="prev" id="prevAlliance">&#10094;</a>
+        <a class="next" id="nextAlliance">&#10095;</a>
+      </div>
+    </div>
+
+ 
+
+     <!-- Blog başlangıç -->
+    <section class="blogs" id="blogs">
+      <h1 class="heading">Ekibimiz</h1>
+      <div class="swiper blogs-slider">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide slide">
+            <div class="image image2">
+              <img src="images/crew/businessman_7965639.png" alt="">
+            </div>
+
+            <div class="content">
+              <h3>Süleyman Hacısalihoğlu</h3>
+              <h2>Genel Müdür</h2>
+          
+              <div class="info_c">
+                  <div class="contact-item">
+                      <i class="fas fa-phone "></i>
+                      <p>+995-514-48-6161</p>
+                  </div>
+                  <div class="contact-item">
+                      <i class="fas fa-envelope mailll"></i>
+                      <p>bzmltd@hotmail.com</p>
+                  </div>
+              </div>
+          </div>
+          </div>
+
+          <!-- 2. slide -->
+          <div class="swiper-slide slide">
+            <div class="image image2">
+              <img src="images/crew/businessman_7965639.png" alt="">
+            </div>
+
+            <div class="content">
+              <h3>Ferhat Zorer</h3>
+              <h2>Finans/Genel Müdür Yardımcısı</h2>
+          
+              <div class="info_c">
+                  <div class="contact-item">
+                      <i class="fas fa-phone "></i>
+                      <p>+995-514-48-6161</p>
+                  </div>
+                  <div class="contact-item">
+                      <i class="fas fa-envelope mailll"></i>
+                      <p>bzmltd@hotmail.com</p>
+                  </div>
+              </div>
+          </div>
+          
+          </div>
+
+          <!-- 3. slide -->
+
+          <div class="swiper-slide slide">
+            <div class="image image2">
+              <img src="images/crew/businessman_7965639.png" alt="">
+            </div>
+
+            <div class="content">
+              <h3>Dogukan Zorer</h3>
+              <h2>Yazılım Mühendisi</h2>
+          
+              <div class="info_c">
+                  <div class="contact-item">
+                      <i class="fas fa-phone "></i>
+                      <p>+995-514-48-6161</p>
+                  </div>
+                  <div class="contact-item">
+                      <i class="fas fa-envelope mailll"></i>
+                      <p>bzmltd@hotmail.com</p>
+                  </div>
+              </div>
+          </div>
+          
+          </div>
+
+          <!-- 4. slide -->
+
+          <div class="swiper-slide slide">
+            <div class="image image2">
+              <img src="images/crew/businessman_7965639.png" alt="">
+            </div>
+
+            <div class="content">
+              <h3>Mehmet Sarıçiçek</h3>
+              <h2>Ekip koordinatörü</h2>
+          
+              <div class="info_c">
+                  <div class="contact-item">
+                      <i class="fas fa-phone "></i>
+                      <p>+995-514-48-6161</p>
+                  </div>
+                  <div class="contact-item">
+                      <i class="fas fa-envelope mailll"></i>
+                      <p>bzmltd@hotmail.com</p>
+                  </div>
+              </div>
+          </div>
+          
+          </div>
+
+
+          <!-- 5. slide -->
+
+          <div class="swiper-slide slide">
+            <div class="image image2">
+              <img src="images/crew/businessman_7965639.png" alt="">
+            </div>
+
+            <div class="content">
+              <h3>Dogukan Zorer</h3>
+              <h2>Yazılım Mühendisi</h2>
+          
+              <div class="info_c">
+                  <div class="contact-item">
+                      <i class="fas fa-phone "></i>
+                      <p>+995-514-48-6161</p>
+                  </div>
+                  <div class="contact-item">
+                      <i class="fas fa-envelope mailll"></i>
+                      <p>bzmltd@hotmail.com</p>
+                  </div>
+              </div>
+          </div>
+          
+          </div>
+
+
+          <!-- 6. slide -->
+
+          <div class="swiper-slide slide">
+            <div class="image image2">
+              <img src="images/crew/businessman_7965639.png" alt="">
+            </div>
+
+            <div class="content">
+              <h3>Dogukan Zorer</h3>
+              <h2>Yazılım Mühendisi</h2>
+          
+              <div class="info_c">
+                  <div class="contact-item">
+                      <i class="fas fa-phone "></i>
+                      <p>+995-514-48-6161</p>
+                  </div>
+                  <div class="contact-item">
+                      <i class="fas fa-envelope mailll"></i>
+                      <p>bzmltd@hotmail.com</p>
+                  </div>
+              </div>
+          </div>
+          
+          </div>
+
+        </div>
+      </div>
+    </section>
+   
+   
+    <!-- Blog End  -->
+
+
+   
+   
+
+
+    <!-- Contact Start -->
+    <section class="contact" id="contact">
+      <h1 class="heading"> İletişim </h1>
+
+      <div class="row">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.4013743381597!2d41.63251097646253!3d41.64706917984698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406786150d6ebc6f%3A0xb0837244b41b84b3!2s74%20Parnavaz%20Mepe%20St%2C%20Batumi!5e0!3m2!1str!2sge!4v1716383224781!5m2!1str!2sge" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form action="" id="contact-form">
+          <h3>Bizimle iletişime geçin</h3>
+          <input type="text" id="name" placeholder="Ad/Soyad" class="box" required>
+          <input type="text" id="country" placeholder="Ülke" class="box" required>
+          <input type="email" id="email" placeholder="Email" class="box" required>
+          <input type="tel" id="phone" placeholder="Telefon" class="" required>
+          <textarea id="message" placeholder="Mesaj..." class="box" cols="30" rows="10" required></textarea>
+          <input type="submit" onclick="sendMail(event)" value="Gönder" class="btn">
+        </form>
+        
+      </div>
+    </section>
+    <!-- Contact Bitiş -->
+
+
+
+     <!--footer section Start -->
+
+     <section class="footer">
+      <div class="links">
+        <a class="btn" href="#home">Ana Sayfa</a>
+        <a class="btn"  href="#about">Hakkımızda</a>
+        <a class="btn" href="#services">Hizmetlerimiz</a>
+        <a class="btn" href="#projects">Projeler</a>
+        <a class="btn"  href="#contact">İletişim</a>
+      </div>
+
+      <div class="credit"><span>Dogukan Zorer </span> | Tüm hakları bzmltd Şirketi'ne aittir © 2024</div>
+    </section>
+    <!--footer section end -->
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- EmailJS Service -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("qDQ3PfeU578T9Afhw");
+   })();
+</script>
+
+<!-- Phone Validate js -->
+<script src="./phoneValidate/phone-number-validation/build/js/intlTelInput.js"></script>
+<script>
+    var input = document.querySelector("#phone");
+    var iti = window.intlTelInput(input, {
+      initialCountry: "auto",
+      geoIpLookup: function(success, failure) {
+        fetch('https://ipinfo.io/json')
+          .then(function(response) {
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error('Failed to get IP info');
+          })
+          .then(function(ipinfo) {
+            success(ipinfo.country);
+          })
+          .catch(function() {
+            success("us");
+          });
+      },
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+    });
+</script>
+
+  </body>
+</html>
