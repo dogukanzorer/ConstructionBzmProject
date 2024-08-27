@@ -363,6 +363,7 @@ section {
   position: relative;
   background-size: cover !important;
   background-position: center !important;
+  
 }
 .home .slide::before {
   content: "";
@@ -544,6 +545,7 @@ section {
   max-width: 700px;
   background-color: white;
   border-radius: 10px;
+  z-index: 1000;
 }
 .modal .modal-content .close {
   position: absolute;
